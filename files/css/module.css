@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* タイトル
+-------------------- */
+.title_02 {
+    border-radius: 4px;
+    background-color: #7dbd32;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    margin-bottom: 14px;
+}
+.title_03 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 3px solid #079d2c;
+    padding: 2px 0;
+    margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 767px) {
+    .title_02 {
+        width: 100%;
+        margin-bottom: 16px;
+        font-size: 1.8rem;
+        padding: 4px 0;
+    }
+    .title_03 {
+        font-size: 1.6rem;
+    }
+}
+
+/* リスト
+-------------------- */
+
+.list_style-disc {
+    list-style-type: disc;
+}
+.list_style-square {
+    list-style-type: square;
+}
+
+/* util
+-------------------- */
+.textColor-red {
+    color: red;
+}
+.dotInterval-narrow {
+    letter-spacing: -0.7rem;
+}
+.text_indent {
+    text-indent: -1rem;
+    padding-left: 1.5rem;
+}
+.note {
+    font-size: 1.3rem;
+}
+
+/* ハンバーガー・パンくず　矢印　
+-------------------- */
+
+.arrow-right {
+    position: relative;
+}
+.arrow-right::before {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #079d2c;
+    border-right: 2px solid #079d2c;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+}
+
+@media only screen and (max-width: 767px) {
+
+    .sp_indent-disabled {
+        display: none;
+    }
+    .note {
+        font-size: 1.2rem;
+    }
+}

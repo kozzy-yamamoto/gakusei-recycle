@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/*タイトル*/
+.visitTitle .visitTitle_word {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    padding: 0 4px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .visitTitle {
+        line-height: 28px;
+    }
+}
+
+.nav_visitPurchase {
+    border: 3px solid #079d2c;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.nav_visitPurchase_title {
+    font-size: 2rem;
+    color: #fff;
+    height: auto;
+    background-color: #079d2c;
+    font-weight: 700;
+    text-align: center;
+    padding: 4px 0;
+}
+.nav_visitPurchase_titleNumber {
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+.nav_visitPurchase_content {
+    display: flex;
+    background-color: #eaffef;
+    padding: 12px 16px;
+}
+.nav_visitPurchase_text {
+    margin-right: 16px;
+}
+.nav_visitPurchase_text .textColor-red {
+    font-size: 1.8rem;
+}
+.arrow_tri {
+    width: 24px;
+    border-top: 24px solid #079d2c;
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    display: block;
+    margin: 0 auto 10px;
+}
+.nav_visitPurchase:nth-of-type(4) {
+    margin-bottom: 24px;
+}
+.telBtn {
+    margin: 8px 0 0;
+}
+.telBtn_inside {
+    display: inline-block;
+    font-weight: bold;
+    padding: 4px 16px;
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    border: solid 1px #aeaeae;
+    border-radius: 3px;
+}
+.textSize-big {
+    font-size: 1.9rem;
+    margin-left: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+    .pc_lineBreak-disabled {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .secBanner_sokujitu img, .secBanner_tel img {
+        width: 100%;
+    }
+    .nav_visitPurchase {
+        width: 100%;
+    }
+    .nav_visitPurchase_title {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .nav_visitPurchase_text {
+        margin-right: 0;
+    }
+    .telBtn_inside {
+        display: block;
+        text-align: center;
+    }
+    .arrow_tri {
+        width: 16px;
+        border-top: 16px solid #079d2c;
+        border-right: 16px solid transparent;
+        border-left: 16px solid transparent;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .nav_visitPurchase_img {
+        display: none;
+    }
+    .note {
+        margin-top: 2px;
+    }
+}

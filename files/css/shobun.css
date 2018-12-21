@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.productList {
+	margin-left: 38px;
+}
+p.shobun_question {
+	font-size: 1.8rem;
+	margin-bottom: 16px;
+}
+.shobun_question:before {
+	margin-right: 5px;
+	margin-left: -38px;
+	padding: 4px 11px;
+	content: 'Q';
+	border-radius: 8px;
+	background: #423fbe;
+	color: #fff;
+}
+p.shobun_answer {
+	margin-bottom: 32px;
+}
+.shobun_answer:before {
+	font-size: 1.8rem;
+	margin-right: 5px;
+	margin-left: -38px;
+	padding: 3px 11px 2px;
+	content: 'A';
+	border-radius: 8px;
+	background: #ff3333;
+	color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+
+	p.shobun_question {
+		font-size: 1.6rem;
+		margin-bottom: 12px;
+	}
+}

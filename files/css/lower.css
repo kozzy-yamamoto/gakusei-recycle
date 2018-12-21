@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*=============================
+
+下層ページのスタイル
+
+==============================*/
+
+/*=========== グローバルナビ  ==============================*/
+
+.glNav {
+    margin: 0 auto;
+}
+.topicPath {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px 0;
+}
+.topicPath li {
+    font-size: 1.5rem;
+}
+.topicPath li a {
+    padding-right: 12px;
+    text-decoration: none;
+    color: #000;
+}
+.topicPath li a:hover {
+    text-decoration: underline;
+}
+.currentPage {
+    padding-left: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .topicPath {
+        padding-left: 16px;
+        border-top: 1px solid #079d2c;
+    }
+    .topicPath li {
+        font-size: 1.3rem;
+    }
+}
+
+/*=========== メインコンテンツ  ==============================*/
+
+.lowerContent, .lowerContent .lowerContent_title, .lowerContent .lowerContent_col {
+    margin-bottom: 16px;
+}
+.list_style-disc {
+    margin-bottom: 8px;
+}
+.lowerContent .lowerContent_col .lowerContent_col_title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+.lowerContent_col_list_textIndent {
+    margin-left: 16px;
+}
+.products_img {
+    margin-bottom: 12px;
+}
+.productList .productList_text {
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .mainColumn {
+        margin: 0 0 16px;
+    }
+    .lowerContent {
+        width: 100%;
+    }
+    .lowerContent .lowerContent_title {
+        margin-bottom: 0;
+    }
+    .lowerContent .lowerContent_col .lowerContent_col_title {
+        font-size: 1.7rem;
+    }
+    .lowerContent .lowerContent_col .lowerContent_col_text, .lowerContent .lowerContent_col .lowerContent_col_list {
+        margin-bottom: 4px;
+    }
+    .text_indent {
+        text-indent: 0;
+        padding-left: 0;
+    }
+    .products_img {
+        width: 100%;
+    }
+    .productList .productList_text {
+        margin-bottom: 12px;
+    }
+}
